@@ -1,2 +1,2 @@
-For now just reads-in an input string of numbers to be sorted.
-The algorithms are yet to be implemented...
+Quicksort: implemented.
+Mergesort: yet to be.
