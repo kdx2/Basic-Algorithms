@@ -1,2 +1,2 @@
 # Basic-Algorithms
-This repository will have any sorting or path-finding algorithms which are deemed fundamental to know.
+This repository will have any sorting, search, traversal and path-finding algorithms which are deemed fundamental to know.
