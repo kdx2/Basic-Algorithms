@@ -17,8 +17,8 @@ effectively halving the array. Repeat, until success or fail.
 II. Detailed version
 1. keep track on the low and high indices, where low = 0, high = array.size
 2. while low is still to the left of high, or coinciding do:
-3. 		find the mid index between the two
-4.		if it's to the left of mid index, set high to mid-1
-5.		else if the element is to the right of mid, set low to mid+1		
-6. 		else if the mid element is the value we are searching for, return it
-7.		else, the value searched for is not present in this array
+3. 	find the mid index between the two
+4.	if it's to the left of mid index, set high to mid-1
+5.	else if the element is to the right of mid, set low to mid+1		
+6. 	else if the mid element is the value we are searching for, return it
+7.	else, the value searched for is not present in this array
