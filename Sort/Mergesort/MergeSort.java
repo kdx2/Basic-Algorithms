@@ -3,8 +3,11 @@ import java.util.Arrays;
 
 public class MergeSort {
 
+	static int[] array = null;
 
-	public MergeSort() {}
+	public MergeSort(int[] array) {
+		this.array = array;
+	}
 
 	public static void merge(int[] arr, int start, int mid, int end) {
 
@@ -50,8 +53,6 @@ public class MergeSort {
 			j++; k++;
 		}
 		
-		System.out.println("Sorted array: ");
-		System.out.println(Arrays.toString(arr));
 	}
 
 	public static void partition_merge_sort(int arr[], int start, int end) {
@@ -66,6 +67,10 @@ public class MergeSort {
 
 			merge(arr, start, mid, end);
 		}
+	}
+	public void printArray () {
+		System.out.println("\n\nSorted array:");
+		System.out.println(Arrays.toString(array));
 	}
 
 	public static void main(String[] args) {
@@ -83,8 +88,12 @@ public class MergeSort {
 			sc.close();
 		}
 
+		MergeSort ms = new MergeSort(input);
+
+		System.out.println("Your array is:");
 		System.out.println(Arrays.toString(input));
-		System.out.println("ArrayLength: " + input.length);
 		partition_merge_sort(input, 0, input.length-1);
+
+		ms.printArray();
 	}
 }
