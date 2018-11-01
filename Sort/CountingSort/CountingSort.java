@@ -3,13 +3,13 @@ import java.util.Arrays;
 import java.util.stream.*;
 
 /*
-*
 * O(cs) = O (n <- to map the input array to the range array)
 *		  + O (k <- to apply the cummulative f(x) to the map array)
 *		  + O (n <- to populate the final array)
 * Hence, this makes:
 * 	O(2*n) + O(k) = O(n) + O(k) = O(n+k) // for the time complexity
-* 	O(n+k) // for the space complexity
+* 	
+* O(n+k) 								 // for the space complexity
 */
 
 public class CountingSort {
